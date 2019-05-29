@@ -1,0 +1,20 @@
+下载：https://pan.baidu.com/s/1Rw3ODhT9dBzBj4xNZcab7A
+
+
+sqlplus 命令连接oracle : 
+	sqlplus system/root@orcl as sysdba;
+
+管理助手，卸载创建 Oracle数据库。
+	开始->*oracle*->配置和移植工具->Database Configuration Assistant
+
+切换用户：conn system/root as sysdba;
+
+启动关闭数据库实例
+	停止：shutdown immediate（立即主动关闭）;
+		(normal 等待任务完成关闭，transactional 等待事务完毕关闭，abort(最强制性的关闭危险))
+	启动：
+		加载到内存：STARTUP [nomount|mount|open|force(强制启动)] [resetrict] [pfile=filename];
+		开启实力：alter database open;
+		合并上面两步：startup;
+
+
